@@ -1,0 +1,58 @@
+SAMPLE INPUTS/OUTPUTS
+
+SAMPLE #1: - all have the same high preference
+
+cat input.csv
+MERCY, 1, SUNNY,KENYA, JOE, ARTHUR, JON
+CITY, 1, ARTHUR, SUNNY, JON, KENYA, JOE
+MAYO, 3, JOE, KENYA, ARTHUR, SUNNY, JON
+
+ARTHUR, MAYO, MERCY, CITY
+SUNNY, MAYO, CITY, MERCY
+JOE, MAYO, MERCY, CITY
+KENYA, MAYO, MERCY, CITY
+JON, MAYO, CITY, MERCY%    
+
+> python assignment_1.py input.csv
+The matching is stable.
+MERCY, JON
+CITY, SUNNY
+MAYO, JOE, KENYA, ARTHUR
+
+SAMPLE #2: not enough slots for all the students
+
+cat Test\ Cases\ 2.csv
+MERCY, 1, SUNNY,KENYA, JOE, ARTHUR, JON
+CITY, 1, ARTHUR, SUNNY, JON, KENYA, JOE
+MAYO, 1, JOE, KENYA, ARTHUR, SUNNY, JON
+
+ARTHUR, MERCY, CITY, MAYO
+SUNNY, CITY, MERCY, MAYO
+JOE, MAYO, MERCY, CITY
+KENYA, CITY, MERCY, MAYO
+JON, MAYO, CITY, MERCY%   
+
+> python assignment_1.py Test\ Cases\ 2.csv
+The matching is stable.
+MERCY, SUNNY
+CITY, ARTHUR
+MAYO, JOE
+
+SAMPLE #3:
+
+cat Test\ Cases\ 1\ Perfect\ Match.csv
+MERCY, 1, SUNNY,KENYA, JOE, ARTHUR, JON
+CITY, 1, ARTHUR, SUNNY, JON, KENYA, JOE
+MAYO, 3, JOE, KENYA, ARTHUR, SUNNY, JON
+
+ARTHUR, MERCY, CITY, MAYO
+SUNNY, CITY, MERCY, MAYO
+JOE, MAYO, MERCY, CITY
+KENYA, CITY, MERCY, MAYO
+JON, MAYO, CITY, MERCY
+
+> python assignment_1.py Test\ Cases\ 1\ Perfect\ Match.csv
+The matching is stable.
+MERCY, SUNNY
+CITY, ARTHUR
+MAYO, JOE, KENYA, JON
