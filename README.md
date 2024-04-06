@@ -12,7 +12,7 @@ Mohammed Ahsan
 mahsan3@students.kennesaw.edu
 000781775
 
-Modified Gale-Shapley Algorithm
+Skyline Problem
 
 ## Requires
 
@@ -20,11 +20,11 @@ Python 3.8.18
 
 ## Run
 
-`python assignment_1.py INPUT_FILE`
+`python assignment_2.py INPUT_FILE OUTPUT_FILE`
 
 For example:
-`python assignment_1.py input.csv`
+`python assignment_2.py input.csv output.csv`
 
 ## Documentation
 
-Sample input and output executions are in sample_input_outputs.txt
+Sample input and output executions are in InputsOutputs

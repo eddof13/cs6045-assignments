@@ -1,5 +1,29 @@
-#Skyline Problem Solution
 import csv
+import sys
+
+#  skyline(buildings):
+#    if base case: empty, return empty array
+#    if base case: single building, return single building
+#    split buildings into two halves left_half, right_half
+#    return merge(skyline(left_half), skyline(right_half))
+#
+#  merge(left_half, right_half):
+#    initialize heightLeft and heightRight, indexLeft, indexRight, currentHeight to 0
+#    initialize empty merged array
+#    while all buildings have not been visited:
+#      if building indexLeft is to the left of building indexRight:
+#        increase indexLeft
+#        set heightLeft to building indexLeft's height
+#      else if building indexLeft is to the right of building indexRight:
+#        increase indexRight
+#        set heightRight to building indexRight's height
+#      else if buildings overlap:
+#        increase both indexLeft and indexRight
+#        set heightLeft to left building and heightRight to rightBuilding
+#      if max(heightLeft, heightRight) != currentHeight:
+#        push new point to merged array
+#      filter out successive points with same height to finalize skyline
+#   return merged
 
 def read_buildings(filename):
     with open(filename, 'r') as file:
@@ -65,4 +89,4 @@ output_file = sys.argv[2]
 buildings = read_buildings(input_file)
 sky = skylines(buildings)
 write_buildings(sky, output_file)
-print("Skyline has been successfully written to", filename1Out)
+print("Skyline has been successfully written to", output_file)
