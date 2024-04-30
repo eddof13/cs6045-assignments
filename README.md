@@ -12,7 +12,7 @@ Mohammed Ahsan
 mahsan3@students.kennesaw.edu
 000781775
 
-Skyline Problem
+Levenshtein Distance
 
 ## Requires
 
@@ -20,10 +20,10 @@ Python 3.8.18
 
 ## Run
 
-`python assignment_2.py INPUT_FILE OUTPUT_FILE`
+`python assignment_3.py INPUT_FILE OUTPUT_FILE`
 
 For example:
-`python assignment_2.py input.csv output.csv`
+`python assignment_3.py input.csv output.csv`
 
 ## Documentation
 
